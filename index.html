@@ -261,15 +261,15 @@
             <!--====003====-->
             <div class=" bg-gray-100 border-t border-lime-650 relative hidden lg:block">
                 <!--========-->
-                <div class="xl:container mx-auto lg:px-0 sm:px-5 px-4 relative">
+                <div x-data="{blackbg:false}" class="xl:container mx-auto lg:px-0 sm:px-5 px-4 relative">
                     <!--========-->
-                    <ul class="table font-HelveticaNeueBd">
+                    <ul @mouseover="blackbg=true" @mouseout="blackbg=false" class="table font-HelveticaNeueBd">
                         <!--========-->
                         <li x-data="{menu:false}" @mouseover="menu=true" @mouseout="menu=false" class=" hover:bg-zinc-500 text-gray-600 hover:text-white py-2 table-cell align-middle cursor-pointer overflow-x-hidden text-center">
                             <!--========-->
                             <a class=" px-6 py-1 border-r border-l border-lime-550 text-sm text-center block" href="#">Heating</a>
                             <!--====mega menu====-->
-                            <div  x-show="menu" class="absolute top-full bg-white px-5 py-7 border border-lime-650 left-0 right-0 z-50">
+                            <div @mouseenter.away="menu=false" x-show="menu" class="absolute top-full bg-white px-5 py-7 border border-lime-650 left-0 right-0 z-50">
                                 <!--========-->
                                 <div class=" grid grid-cols-4 gap-4">
                                     <!--========-->
@@ -405,11 +405,6 @@
                                     </ul>
                                 </div>
                             </div>
-                            <!--========-->
-                            <div @mouseenter="menu===false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
-                                <div class="h-screen w-full"> </div>
-                                <div class="h-screen w-full"> </div>
-                            </div>
                         </li>
                         <!--========-->
                         <li x-data="{menu:false}" @mouseover="menu=true"  @mouseout="menu=false" class=" hover:bg-zinc-500 text-gray-600 hover:text-white py-2 table-cell align-middle cursor-pointer overflow-x-hidden text-center">
@@ -444,11 +439,6 @@
                                         <a href="#" class="font-HelveticaNeueBd text-sm text-lime-750 uppercase">EV Charger Installation</a>
                                     </li>
                                 </ul>
-                            </div>
-                            <!--========-->
-                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
-                                <div class="h-screen w-full"> </div>
-                                <div class="h-screen w-full"> </div>
                             </div>
                         </li>
                         <!--========-->
@@ -580,11 +570,6 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-                            <!--========-->
-                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
-                                <div class="h-screen w-full"> </div>
-                                <div class="h-screen w-full"> </div>
                             </div>
                         </li>
                         <!--========-->
@@ -882,11 +867,6 @@
                                     </ul>
                                 </div>
                             </div>
-                            <!--========-->
-                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
-                                <div class="h-screen w-full"> </div>
-                                <div class="h-screen w-full"> </div>
-                            </div>
                         </li>
                         <!--========-->
                         <li x-data="{menu:false}" @mouseover="menu=true"  @mouseout="menu=false"
@@ -1046,11 +1026,6 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-                            <!--========-->
-                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
-                                <div class="h-screen w-full"> </div>
-                                <div class="h-screen w-full"> </div>
                             </div>
                         </li>
                         <!--========-->
@@ -1249,11 +1224,6 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-                            <!--========-->
-                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
-                                <div class="h-screen w-full"> </div>
-                                <div class="h-screen w-full"> </div>
                             </div>
                         </li>
                         <!--========-->
@@ -1533,11 +1503,6 @@
                                     </ul>
                                 </div>
                             </div>
-                            <!--========-->
-                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
-                                <div class="h-screen w-full"> </div>
-                                <div class="h-screen w-full"> </div>
-                            </div>
                         </li>
                         <!--========-->
                         <li x-data="{menu:false}" @mouseover="menu=true"  @mouseout="menu=false"
@@ -1816,11 +1781,6 @@
                                     </ul>
                                 </div>
                             </div>
-                            <!--========-->
-                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
-                                <div class="h-screen w-full"> </div>
-                                <div class="h-screen w-full"> </div>
-                            </div>
                         </li>
                         <!--========-->
                         <li x-data="{menu:false}" @mouseover="menu=true"  @mouseout="menu=false"
@@ -2094,11 +2054,6 @@
                                     </ul>
                                 </div>
                             </div>
-                            <!--========-->
-                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
-                                <div class="h-screen w-full"> </div>
-                                <div class="h-screen w-full"> </div>
-                            </div>
                         </li>
                         <!--========-->
                         <li x-data="{menu:false}" @mouseover="menu=true"  @mouseout="menu=false"
@@ -2352,24 +2307,20 @@
                                     </ul>
                                 </div>
                             </div>
-                            <!--========-->
-                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
-                                <div class="h-screen w-full"> </div>
-                                <div class="h-screen w-full"> </div>
-                            </div>
                         </li>
                         <!--========-->
                         <li x-data="{menu:false}" @mouseover="menu=true"  @mouseout="menu=false"
                             class=" hover:bg-zinc-500 text-gray-600 hover:text-white py-2 table-cell align-middle cursor-pointer overflow-x-hidden">
                             <!--========-->
                             <a class="px-6 py-1 border-r border-lime-550 xl:text-sm text-xs text-center block leading-tighter" href="#">Clearance</a>
-                            <!--========-->
-                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
-                                <div class="h-screen w-full"> </div>
-                                <div class="h-screen w-full"> </div>
-                            </div>
                         </li>
+                        
                     </ul>
+                    <!--========-->
+                    <div x-show="blackbg" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
+                        <div class="h-screen w-full"> </div>
+                        <div class="h-screen w-full"> </div>
+                    </div>
                 </div>
             </div>
             <!--====004====-->
