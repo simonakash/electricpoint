@@ -2,18 +2,22 @@
 /*----font style-----*/
 @font-face {
     font-family: HelveticaNeueLTStdRoman;
+    src: url(https: //www.electricpoint.com/static/version1647521837/frontend/WilliamsCommerce/medlock/en_GB/fonts/helveticaNeueLTStdRoman/HelveticaNeueLTStdRoman.woff2);
     src: url(/font/HelveticaNeueLTStdRoman.woff2);
 }
 @font-face {
     font-family: HelveticaNeueLTStdBd;
+    src: url(https: //www.electricpoint.com/static/version1647521837/frontend/WilliamsCommerce/medlock/en_GB/fonts/HelveticaNeueLTStdBd.woff2);
     src: url(/font/HelveticaNeueLTStdBd.woff2);
 }
 @font-face {
     font-family: HelveticaNeueLTStdMdCn;
+    src: url(https: //www.electricpoint.com/static/version1647521837/frontend/WilliamsCommerce/medlock/en_GB/fonts/HelveticaNeueLTStdMdCn.woff2);
     src: url(/font/HelveticaNeueLTStdMdCn.woff2);
 }
 @font-face {
     font-family: HelveticaNeueLTStdLtCn;
+    src: url(https: //www.electricpoint.com/static/version1647521837/frontend/WilliamsCommerce/medlock/en_GB/fonts/HelveticaNeueLTStdLtCn.woff2);
     src: url(/font/HelveticaNeueLTStdLtCn.woff2);
 }
 
@@ -21,13 +25,13 @@
         font-family: 'HelveticaNeueLTStdRoman', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .font-HelveticaNeueBd{
-    font-family: 'HelveticaNeueLTStdBd';
+    font-family: 'HelveticaNeueLTStdBd', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .font-HelveticaNeueLTStdMdCn{
-    font-family: 'HelveticaNeueLTStdMdCn';
+    font-family: 'HelveticaNeueLTStdMdCn', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .font-HelveticaNeueLTStdLtCn{
-    font-family: 'HelveticaNeueLTStdLtCn';
+    font-family: 'HelveticaNeueLTStdLtCn', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 

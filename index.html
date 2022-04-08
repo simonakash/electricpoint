@@ -265,11 +265,11 @@
                     <!--========-->
                     <ul class="table font-HelveticaNeueBd">
                         <!--========-->
-                        <li x-data="{menu:false}" @mouseover="menu=true" @mouseover="menu=false" @mouseout="menu=false" class=" hover:bg-zinc-500 text-gray-600 hover:text-white py-2 table-cell align-middle cursor-pointer overflow-x-hidden text-center">
+                        <li x-data="{menu:false}" @mouseover="menu=true" @mouseout="menu=false" class=" hover:bg-zinc-500 text-gray-600 hover:text-white py-2 table-cell align-middle cursor-pointer overflow-x-hidden text-center">
                             <!--========-->
                             <a class=" px-6 py-1 border-r border-l border-lime-550 text-sm text-center block" href="#">Heating</a>
                             <!--====mega menu====-->
-                            <div x-show="menu" class="absolute top-full bg-white px-5 py-7 border border-lime-650 left-0 right-0 z-50">
+                            <div  x-show="menu" class="absolute top-full bg-white px-5 py-7 border border-lime-650 left-0 right-0 z-50">
                                 <!--========-->
                                 <div class=" grid grid-cols-4 gap-4">
                                     <!--========-->
@@ -406,13 +406,13 @@
                                 </div>
                             </div>
                             <!--========-->
-                            <div x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
+                            <div @mouseenter="menu===false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
                                 <div class="h-screen w-full"> </div>
                                 <div class="h-screen w-full"> </div>
                             </div>
                         </li>
                         <!--========-->
-                        <li x-data="{menu:false}" @mouseover="menu=true" @mouseover="menu=false" @mouseout="menu=false" class=" hover:bg-zinc-500 text-gray-600 hover:text-white py-2 table-cell align-middle cursor-pointer overflow-x-hidden text-center">
+                        <li x-data="{menu:false}" @mouseover="menu=true"  @mouseout="menu=false" class=" hover:bg-zinc-500 text-gray-600 hover:text-white py-2 table-cell align-middle cursor-pointer overflow-x-hidden text-center">
                             <!--========-->
                             <a class="px-6 py-1 border-r border-lime-550 xl:text-sm text-xs text-center block leading-tighter" href="#">Electric Car Chargers</a>
                             <!--====mega menu====-->
@@ -446,13 +446,13 @@
                                 </ul>
                             </div>
                             <!--========-->
-                            <div x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
+                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
                                 <div class="h-screen w-full"> </div>
                                 <div class="h-screen w-full"> </div>
                             </div>
                         </li>
                         <!--========-->
-                        <li x-data="{menu:false}" @mouseover="menu=true" @mouseover="menu=false" @mouseout="menu=false"
+                        <li x-data="{menu:false}" @mouseover="menu=true"  @mouseout="menu=false"
                             class=" hover:bg-zinc-500 text-gray-600 hover:text-white py-2 table-cell align-middle cursor-pointer overflow-x-hidden">
                             <!--========-->
                             <a class="px-6 py-1 border-r border-lime-550 xl:text-sm text-xs text-center block leading-tighter" href="#">Extractor Fans & Ventilation</a>
@@ -582,13 +582,13 @@
                                 </div>
                             </div>
                             <!--========-->
-                            <div x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
+                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
                                 <div class="h-screen w-full"> </div>
                                 <div class="h-screen w-full"> </div>
                             </div>
                         </li>
                         <!--========-->
-                        <li x-data="{menu:false}" @mouseover="menu=true" @mouseover="menu=false" @mouseout="menu=false"
+                        <li x-data="{menu:false}" @mouseover="menu=true"  @mouseout="menu=false"
                             class=" hover:bg-zinc-500 text-gray-600 hover:text-white py-2 table-cell align-middle cursor-pointer overflow-x-hidden">
                             <!--========-->
                             <a class="px-6 py-1 border-r border-lime-550 xl:text-sm text-xs text-center block leading-tighter" href="#">Lighting & Light Bulbs</a>
@@ -883,13 +883,13 @@
                                 </div>
                             </div>
                             <!--========-->
-                            <div x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
+                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
                                 <div class="h-screen w-full"> </div>
                                 <div class="h-screen w-full"> </div>
                             </div>
                         </li>
                         <!--========-->
-                        <li x-data="{menu:false}" @mouseover="menu=true" @mouseover="menu=false" @mouseout="menu=false"
+                        <li x-data="{menu:false}" @mouseover="menu=true"  @mouseout="menu=false"
                             class=" hover:bg-zinc-500 text-gray-600 hover:text-white py-2 table-cell align-middle cursor-pointer overflow-x-hidden">
                             <!--========-->
                             <a class="px-6 py-1 border-r border-lime-550 xl:text-sm text-xs text-center block leading-tighter" href="#">Smart Home</a>
@@ -1048,13 +1048,13 @@
                                 </div>
                             </div>
                             <!--========-->
-                            <div x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
+                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
                                 <div class="h-screen w-full"> </div>
                                 <div class="h-screen w-full"> </div>
                             </div>
                         </li>
                         <!--========-->
-                        <li x-data="{menu:false}" @mouseover="menu=true" @mouseover="menu=false" @mouseout="menu=false"
+                        <li x-data="{menu:false}" @mouseover="menu=true"  @mouseout="menu=false"
                             class=" hover:bg-zinc-500 text-gray-600 hover:text-white py-2 table-cell align-middle cursor-pointer overflow-x-hidden">
                             <!--========-->
                             <a class="px-6 py-1 border-r border-lime-550 xl:text-sm text-xs text-center block leading-tighter" href="#">Smoke Alarms & Detectors</a>
@@ -1251,13 +1251,13 @@
                                 </div>
                             </div>
                             <!--========-->
-                            <div x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
+                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
                                 <div class="h-screen w-full"> </div>
                                 <div class="h-screen w-full"> </div>
                             </div>
                         </li>
                         <!--========-->
-                        <li x-data="{menu:false}" @mouseover="menu=true" @mouseover="menu=false" @mouseout="menu=false"
+                        <li x-data="{menu:false}" @mouseover="menu=true"  @mouseout="menu=false"
                             class=" hover:bg-zinc-500 text-gray-600 hover:text-white py-2 table-cell align-middle cursor-pointer overflow-x-hidden">
                             <!--========-->
                             <a class="px-6 py-1 border-r border-lime-550 xl:text-sm text-xs text-center block leading-tighter" href="#">Circuit Protection</a>
@@ -1534,13 +1534,13 @@
                                 </div>
                             </div>
                             <!--========-->
-                            <div x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
+                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
                                 <div class="h-screen w-full"> </div>
                                 <div class="h-screen w-full"> </div>
                             </div>
                         </li>
                         <!--========-->
-                        <li x-data="{menu:false}" @mouseover="menu=true" @mouseover="menu=false" @mouseout="menu=false"
+                        <li x-data="{menu:false}" @mouseover="menu=true"  @mouseout="menu=false"
                             class=" hover:bg-zinc-500 text-gray-600 hover:text-white py-2 table-cell align-middle cursor-pointer overflow-x-hidden">
                             <!--========-->
                             <a class="px-6 py-1 border-r border-lime-550 xl:text-sm text-xs text-center block leading-tighter" href="#">Wiring Accessories</a>
@@ -1817,13 +1817,13 @@
                                 </div>
                             </div>
                             <!--========-->
-                            <div x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
+                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
                                 <div class="h-screen w-full"> </div>
                                 <div class="h-screen w-full"> </div>
                             </div>
                         </li>
                         <!--========-->
-                        <li x-data="{menu:false}" @mouseover="menu=true" @mouseover="menu=false" @mouseout="menu=false"
+                        <li x-data="{menu:false}" @mouseover="menu=true"  @mouseout="menu=false"
                             class=" hover:bg-zinc-500 text-gray-600 hover:text-white py-2 table-cell align-middle cursor-pointer overflow-x-hidden">
                             <!--========-->
                             <a class="px-6 py-1 border-r border-lime-550 xl:text-sm text-xs text-center block leading-tighter" href="#">Tools & Fixings</a>
@@ -2095,13 +2095,13 @@
                                 </div>
                             </div>
                             <!--========-->
-                            <div x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
+                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
                                 <div class="h-screen w-full"> </div>
                                 <div class="h-screen w-full"> </div>
                             </div>
                         </li>
                         <!--========-->
-                        <li x-data="{menu:false}" @mouseover="menu=true" @mouseover="menu=false" @mouseout="menu=false"
+                        <li x-data="{menu:false}" @mouseover="menu=true"  @mouseout="menu=false"
                             class=" hover:bg-zinc-500 text-gray-600 hover:text-white py-2 table-cell align-middle cursor-pointer overflow-x-hidden">
                             <!--========-->
                             <a class="px-6 py-1 border-r border-lime-550 xl:text-sm text-xs text-center block leading-tighter" href="#">Brands</a>
@@ -2353,18 +2353,18 @@
                                 </div>
                             </div>
                             <!--========-->
-                            <div x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
+                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
                                 <div class="h-screen w-full"> </div>
                                 <div class="h-screen w-full"> </div>
                             </div>
                         </li>
                         <!--========-->
-                        <li x-data="{menu:false}" @mouseover="menu=true" @mouseover="menu=false" @mouseout="menu=false"
+                        <li x-data="{menu:false}" @mouseover="menu=true"  @mouseout="menu=false"
                             class=" hover:bg-zinc-500 text-gray-600 hover:text-white py-2 table-cell align-middle cursor-pointer overflow-x-hidden">
                             <!--========-->
                             <a class="px-6 py-1 border-r border-lime-550 xl:text-sm text-xs text-center block leading-tighter" href="#">Clearance</a>
                             <!--========-->
-                            <div x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
+                            <div @mouseover="menu=false" x-show="menu" class="absolute bg-black bg-opacity-40 -left-20 -right-20 z-40 top-full">
                                 <div class="h-screen w-full"> </div>
                                 <div class="h-screen w-full"> </div>
                             </div>
@@ -3373,7 +3373,6 @@
                 </div>
             </div>
         </footer>
-        
 
         <!--  Alpine Js -->
         <script src="js/alpine.min.js" defer></script>
