@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./index.html","./heating.html"],
+  content: ["./index.html", "./heating.html","./dimplex-quantum-storage-heaters.html"],
   theme: {
     extend: {
       fontSize: {
