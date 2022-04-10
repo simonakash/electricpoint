@@ -23,13 +23,15 @@ module.exports = {
       },
       lineHeight: {
         'tighter': '1.2',
-      }
+      },
     },
   },
   variants: {
     extend: {
       grayscale: ['hover', 'focus'],
+      appearance: ['hover', 'focus'],
     }
   },
+
   plugins: [],
 }
