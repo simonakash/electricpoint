@@ -185,85 +185,1159 @@
                             </div>
                         </div>
                         <!--====mobile menu catagori====-->
-                        <nav @click.away="humberger=false" x-show="humberger"
-                            class=" font-HelveticaNeueBd absolute md:left-0 md:right-0 md:top-14 -left-4 -right-4 top-0 z-50">
-                            <ul class=" px-2 bg-white border-2 md:border-t-0 border-gray-600 divide-y divide-lime-650">
+                        <nav x-data="{tab:'tab1'}" @click.away="humberger=false" x-show="humberger"
+                            class="font-HelveticaNeueLTStdMd absolute md:left-0 md:right-0 md:top-14 -left-4 -right-4 top-0 z-50">
+                            <!--========-->
+                            <ul x-show="tab==='tab1'"
+                                class=" px-2 bg-white border-2 md:border-t-0 border-gray-600 divide-y divide-lime-650">
                                 <!--========-->
                                 <li>
-                                    <p class="text-xl text-lime-650 py-2">Category</p>
+                                    <p class="text-2xl text-lime-650 py-2 font-HelveticaNeueBd">Category</p>
                                 </li>
                                 <!--========-->
                                 <li>
-                                    <a href="heating.html"
+                                    <a @click.prevent="tab='tab2'" href="heating.html"
                                         class="text-base py-2 block text-gray-500 hover:text-lime-650">Heating</a>
+        
                                 </li>
                                 <!--========-->
                                 <li>
-                                    <a href="#" class="text-base py-2 block text-gray-500 hover:text-lime-650">Electric Car
+                                    <a @click.prevent="tab='tab3'" href="#"
+                                        class="text-base py-2 block text-gray-500 hover:text-lime-650">Electric Car
                                         Chargers</a>
                                 </li>
                                 <!--========-->
                                 <li>
-                                    <a href="#" class="text-base py-2 block text-gray-500 hover:text-lime-650">Extractor
+                                    <a @click.prevent="tab='tab4'" href="#"
+                                        class="text-base py-2 block text-gray-500 hover:text-lime-650">Extractor
                                         Fans &
                                         Ventilation</a>
                                 </li>
                                 <!--========-->
                                 <li>
-                                    <a href="#" class="text-base py-2 block text-gray-500 hover:text-lime-650">Electric Car
+                                    <a @click.prevent="tab='tab5'" href="#"
+                                        class="text-base py-2 block text-gray-500 hover:text-lime-650">Electric Car
                                         Chargers</a>
                                 </li>
                                 <!--========-->
                                 <li>
-                                    <a href="#" class="text-base py-2 block text-gray-500 hover:text-lime-650">Lighting &
+                                    <a @click.prevent="tab='tab6'" href="#"
+                                        class="text-base py-2 block text-gray-500 hover:text-lime-650">Lighting &
                                         Light
                                         Bulbs</a>
                                 </li>
                                 <!--========-->
                                 <li>
-                                    <a href="#" class="text-base py-2 block text-gray-500 hover:text-lime-650">Smart
+                                    <a @click.prevent="tab='tab7'" href="#"
+                                        class="text-base py-2 block text-gray-500 hover:text-lime-650">Smart
                                         Home</a>
                                 </li>
                                 <!--========-->
                                 <li>
-                                    <a href="#" class="text-base py-2 block text-gray-500 hover:text-lime-650">Smoke Alarms
+                                    <a @click.prevent="tab='tab8'" href="#"
+                                        class="text-base py-2 block text-gray-500 hover:text-lime-650">Smoke Alarms
                                         &
                                         Detectors</a>
                                 </li>
                                 <!--========-->
                                 <li>
-                                    <a href="#" class="text-base py-2 block text-gray-500 hover:text-lime-650">Circuit
+                                    <a @click.prevent="tab='tab9'" href="#"
+                                        class="text-base py-2 block text-gray-500 hover:text-lime-650">Circuit
                                         Protection</a>
                                 </li>
                                 <!--========-->
                                 <li>
-                                    <a href="#" class="text-base py-2 block text-gray-500 hover:text-lime-650">Wiring
+                                    <a @click.prevent="tab='tab10'" href="#"
+                                        class="text-base py-2 block text-gray-500 hover:text-lime-650">Wiring
                                         Accessories</a>
                                 </li>
                                 <!--========-->
                                 <li>
-                                    <a href="#" class="text-base py-2 block text-gray-500 hover:text-lime-650">Wiring
+                                    <a @click.prevent="tab='tab11'" href="#"
+                                        class="text-base py-2 block text-gray-500 hover:text-lime-650">Wiring
                                         Accessories</a>
                                 </li>
                                 <!--========-->
                                 <li>
-                                    <a href="#" class="text-base py-2 block text-gray-500 hover:text-lime-650">Cable & Cable
+                                    <a @click.prevent="tab='tab12'" href="#"
+                                        class="text-base py-2 block text-gray-500 hover:text-lime-650">Cable & Cable
                                         Management</a>
                                 </li>
                                 <!--========-->
                                 <li>
-                                    <a href="#" class="text-base py-2 block text-gray-500 hover:text-lime-650">Tools &
+                                    <a @click.prevent="tab='tab13'" href="#"
+                                        class="text-base py-2 block text-gray-500 hover:text-lime-650">Tools &
                                         Fixings</a>
                                 </li>
                                 <!--========-->
                                 <li>
-                                    <a href="#" class="text-base py-2 block text-gray-500 hover:text-lime-650">Brands</a>
+                                    <a @click.prevent="tab='tab14'" href="#"
+                                        class="text-base py-2 block text-gray-500 hover:text-lime-650">Brands</a>
                                 </li>
                                 <!--========-->
                                 <li>
                                     <a href="#" class="text-base py-2 block text-gray-500 hover:text-lime-650">Clearance</a>
                                 </li>
                             </ul>
+                            <!--====tab2====-->
+                            <div>
+                                <!--========-->
+                                <ul x-show="tab==='tab2'"
+                                    class=" px-2 bg-white border-2 md:border-t-0 border-gray-600 divide-y divide-lime-650">
+                                    <!--========-->
+                                    <li @click="tab='tab1'" class=" flex items-center cursor-pointer">
+                                        <!--========-->
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class=" h-9 w-9 text-gray-600 transform rotate-90" fill="currentColor"
+                                                viewBox="0 0 320 512">
+                                                <path
+                                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                                            </svg>
+                                        </div>
+                                        <!--========-->
+                                        <p class=" text-xl text-zinc-500 font-HelveticaNeueBd">Back to Category</p>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="heating.html"
+                                            class="text-2xl text-lime-650 py-2 font-HelveticaNeueBd block ">Heating</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a @click.prevent="tab='tab15'" href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Electric
+                                            Heating</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a @click.prevent="tab='tab16'" href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Water
+                                            Heating</a>
+                                    </li>
+                                </ul>
+                                <!--========-->
+                                <ul x-show="tab==='tab15'"
+                                    class=" px-2 bg-white border-2 md:border-t-0 border-gray-600 divide-y divide-lime-650">
+                                    <!--========-->
+                                    <li @click="tab='tab2'" class=" flex items-center cursor-pointer">
+                                        <!--========-->
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class=" h-9 w-9 text-gray-600 transform rotate-90" fill="currentColor"
+                                                viewBox="0 0 320 512">
+                                                <path
+                                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                                            </svg>
+                                        </div>
+                                        <!--========-->
+                                        <p class=" text-xl text-zinc-500 font-HelveticaNeueBd">Back to Category</p>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#" class="text-2xl text-lime-650 py-2 font-HelveticaNeueBd block ">Electric
+                                            Heating</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="dimplex-quantum-storage-heaters.html"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Dimplex
+                                            Quantum Storage Heaters</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Ohme
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Rolec
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Sync
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Ohme
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Rolec
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Sync
+                                            EV Chargers</a>
+                                    </li>
+                                </ul>
+                                <!--========-->
+                                <ul x-show="tab==='tab16'"
+                                    class=" px-2 bg-white border-2 md:border-t-0 border-gray-600 divide-y divide-lime-650">
+                                    <!--========-->
+                                    <li @click="tab='tab2'" class=" flex items-center cursor-pointer">
+                                        <!--========-->
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class=" h-9 w-9 text-gray-600 transform rotate-90" fill="currentColor"
+                                                viewBox="0 0 320 512">
+                                                <path
+                                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                                            </svg>
+                                        </div>
+                                        <!--========-->
+                                        <p class=" text-xl text-zinc-500 font-HelveticaNeueBd">Back to Category</p>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#" class="text-2xl text-lime-650 py-2 font-HelveticaNeueBd block ">Water
+                                            Heating</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="dimplex-quantum-storage-heaters.html"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Dimplex
+                                            Quantum Storage Heaters</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Ohme
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Rolec
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Sync
+                                            EV Chargers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--====tab3====-->
+                            <div>
+                                <!--========-->
+                                <ul x-show="tab==='tab3'"
+                                    class=" px-2 bg-white border-2 md:border-t-0 border-gray-600 divide-y divide-lime-650">
+                                    <!--========-->
+                                    <li @click="tab='tab1'" class=" flex items-center cursor-pointer">
+                                        <!--========-->
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class=" h-9 w-9 text-gray-600 transform rotate-90" fill="currentColor"
+                                                viewBox="0 0 320 512">
+                                                <path
+                                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                                            </svg>
+                                        </div>
+                                        <!--========-->
+                                        <p class=" text-xl text-zinc-500 font-HelveticaNeueBd">Back to Category</p>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#" class="text-2xl text-lime-650 py-2 font-HelveticaNeueBd block ">Electric Car
+                                            Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--====tab4====-->
+                            <div>
+                                <!--========-->
+                                <ul x-show="tab==='tab4'"
+                                    class=" px-2 bg-white border-2 md:border-t-0 border-gray-600 divide-y divide-lime-650">
+                                    <!--========-->
+                                    <li @click="tab='tab1'" class=" flex items-center cursor-pointer">
+                                        <!--========-->
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class=" h-9 w-9 text-gray-600 transform rotate-90" fill="currentColor"
+                                                viewBox="0 0 320 512">
+                                                <path
+                                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                                            </svg>
+                                        </div>
+                                        <!--========-->
+                                        <p class=" text-xl text-zinc-500 font-HelveticaNeueBd">Back to Category</p>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#" class="text-2xl text-lime-650 py-2 font-HelveticaNeueBd block ">Extractor
+                                            Fans &
+                                            Ventilation</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--====tab5====-->
+                            <div>
+                                <!--========-->
+                                <ul x-show="tab==='tab5'"
+                                    class=" px-2 bg-white border-2 md:border-t-0 border-gray-600 divide-y divide-lime-650">
+                                    <!--========-->
+                                    <li @click="tab='tab1'" class=" flex items-center cursor-pointer">
+                                        <!--========-->
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class=" h-9 w-9 text-gray-600 transform rotate-90" fill="currentColor"
+                                                viewBox="0 0 320 512">
+                                                <path
+                                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                                            </svg>
+                                        </div>
+                                        <!--========-->
+                                        <p class=" text-xl text-zinc-500 font-HelveticaNeueBd">Back to Category</p>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#" class="text-2xl text-lime-650 py-2 font-HelveticaNeueBd block ">Electric Car
+                                            Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--====tab6====-->
+                            <div>
+                                <!--========-->
+                                <ul x-show="tab==='tab6'"
+                                    class=" px-2 bg-white border-2 md:border-t-0 border-gray-600 divide-y divide-lime-650">
+                                    <!--========-->
+                                    <li @click="tab='tab1'" class=" flex items-center cursor-pointer">
+                                        <!--========-->
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class=" h-9 w-9 text-gray-600 transform rotate-90" fill="currentColor"
+                                                viewBox="0 0 320 512">
+                                                <path
+                                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                                            </svg>
+                                        </div>
+                                        <!--========-->
+                                        <p class=" text-xl text-zinc-500 font-HelveticaNeueBd">Back to Category</p>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#" class="text-2xl text-lime-650 py-2 font-HelveticaNeueBd block ">Lighting &
+                                            Light
+                                            Bulbs</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--====tab7====-->
+                            <div>
+                                <!--========-->
+                                <ul x-show="tab==='tab7'"
+                                    class=" px-2 bg-white border-2 md:border-t-0 border-gray-600 divide-y divide-lime-650">
+                                    <!--========-->
+                                    <li @click="tab='tab1'" class=" flex items-center cursor-pointer">
+                                        <!--========-->
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class=" h-9 w-9 text-gray-600 transform rotate-90" fill="currentColor"
+                                                viewBox="0 0 320 512">
+                                                <path
+                                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                                            </svg>
+                                        </div>
+                                        <!--========-->
+                                        <p class=" text-xl text-zinc-500 font-HelveticaNeueBd">Back to Category</p>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#" class="text-2xl text-lime-650 py-2 font-HelveticaNeueBd block ">Smart
+                                            Home</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--====tab8====-->
+                            <div>
+                                <!--========-->
+                                <ul x-show="tab==='tab8'"
+                                    class=" px-2 bg-white border-2 md:border-t-0 border-gray-600 divide-y divide-lime-650">
+                                    <!--========-->
+                                    <li @click="tab='tab1'" class=" flex items-center cursor-pointer">
+                                        <!--========-->
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class=" h-9 w-9 text-gray-600 transform rotate-90" fill="currentColor"
+                                                viewBox="0 0 320 512">
+                                                <path
+                                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                                            </svg>
+                                        </div>
+                                        <!--========-->
+                                        <p class=" text-xl text-zinc-500 font-HelveticaNeueBd">Back to Category</p>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#" class="text-2xl text-lime-650 py-2 font-HelveticaNeueBd block ">Smoke Alarms
+                                            &
+                                            Detectors</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--====tab9====-->
+                            <div>
+                                <!--========-->
+                                <ul x-show="tab==='tab9'"
+                                    class=" px-2 bg-white border-2 md:border-t-0 border-gray-600 divide-y divide-lime-650">
+                                    <!--========-->
+                                    <li @click="tab='tab1'" class=" flex items-center cursor-pointer">
+                                        <!--========-->
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class=" h-9 w-9 text-gray-600 transform rotate-90" fill="currentColor"
+                                                viewBox="0 0 320 512">
+                                                <path
+                                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                                            </svg>
+                                        </div>
+                                        <!--========-->
+                                        <p class=" text-xl text-zinc-500 font-HelveticaNeueBd">Back to Category</p>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#" class="text-2xl text-lime-650 py-2 font-HelveticaNeueBd block ">Circuit
+                                            Protection</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--====tab10====-->
+                            <div>
+                                <!--========-->
+                                <ul x-show="tab==='tab10'"
+                                    class=" px-2 bg-white border-2 md:border-t-0 border-gray-600 divide-y divide-lime-650">
+                                    <!--========-->
+                                    <li @click="tab='tab1'" class=" flex items-center cursor-pointer">
+                                        <!--========-->
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class=" h-9 w-9 text-gray-600 transform rotate-90" fill="currentColor"
+                                                viewBox="0 0 320 512">
+                                                <path
+                                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                                            </svg>
+                                        </div>
+                                        <!--========-->
+                                        <p class=" text-xl text-zinc-500 font-HelveticaNeueBd">Back to Category</p>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#" class="text-2xl text-lime-650 py-2 font-HelveticaNeueBd block ">Wiring
+                                            Accessories</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--====tab11====-->
+                            <div>
+                                <!--========-->
+                                <ul x-show="tab==='tab11'"
+                                    class=" px-2 bg-white border-2 md:border-t-0 border-gray-600 divide-y divide-lime-650">
+                                    <!--========-->
+                                    <li @click="tab='tab1'" class=" flex items-center cursor-pointer">
+                                        <!--========-->
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class=" h-9 w-9 text-gray-600 transform rotate-90" fill="currentColor"
+                                                viewBox="0 0 320 512">
+                                                <path
+                                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                                            </svg>
+                                        </div>
+                                        <!--========-->
+                                        <p class=" text-xl text-zinc-500 font-HelveticaNeueBd">Back to Category</p>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#" class="text-2xl text-lime-650 py-2 font-HelveticaNeueBd block ">Wiring
+                                            Accessories</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--====tab12====-->
+                            <div>
+                                <!--========-->
+                                <ul x-show="tab==='tab12'"
+                                    class=" px-2 bg-white border-2 md:border-t-0 border-gray-600 divide-y divide-lime-650">
+                                    <!--========-->
+                                    <li @click="tab='tab1'" class=" flex items-center cursor-pointer">
+                                        <!--========-->
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class=" h-9 w-9 text-gray-600 transform rotate-90" fill="currentColor"
+                                                viewBox="0 0 320 512">
+                                                <path
+                                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                                            </svg>
+                                        </div>
+                                        <!--========-->
+                                        <p class=" text-xl text-zinc-500 font-HelveticaNeueBd">Back to Category</p>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#" class="text-2xl text-lime-650 py-2 font-HelveticaNeueBd block ">Cable &
+                                            Cable
+                                            Management</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--====tab13====-->
+                            <div>
+                                <!--========-->
+                                <ul x-show="tab==='tab13'"
+                                    class=" px-2 bg-white border-2 md:border-t-0 border-gray-600 divide-y divide-lime-650">
+                                    <!--========-->
+                                    <li @click="tab='tab1'" class=" flex items-center cursor-pointer">
+                                        <!--========-->
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class=" h-9 w-9 text-gray-600 transform rotate-90" fill="currentColor"
+                                                viewBox="0 0 320 512">
+                                                <path
+                                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                                            </svg>
+                                        </div>
+                                        <!--========-->
+                                        <p class=" text-xl text-zinc-500 font-HelveticaNeueBd">Back to Category</p>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#" class="text-2xl text-lime-650 py-2 font-HelveticaNeueBd block ">Tools &
+                                            Fixings</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--====tab14====-->
+                            <div>
+                                <!--========-->
+                                <ul x-show="tab==='tab14'"
+                                    class=" px-2 bg-white border-2 md:border-t-0 border-gray-600 divide-y divide-lime-650">
+                                    <!--========-->
+                                    <li @click="tab='tab1'" class=" flex items-center cursor-pointer">
+                                        <!--========-->
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class=" h-9 w-9 text-gray-600 transform rotate-90" fill="currentColor"
+                                                viewBox="0 0 320 512">
+                                                <path
+                                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                                            </svg>
+                                        </div>
+                                        <!--========-->
+                                        <p class=" text-xl text-zinc-500 font-HelveticaNeueBd">Back to Category</p>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#" class="text-2xl text-lime-650 py-2 font-HelveticaNeueBd block ">Brands</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                    <!--========-->
+                                    <li>
+                                        <a href="#"
+                                            class="hover:text-lime-650 text-xl text-zinc-500 py-1 font-HelveticaNeueRoman block">Wallbox
+                                            EV Chargers</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </nav>
                     </div>
                     <!--====00====-->
