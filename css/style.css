@@ -60,6 +60,32 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+
+
+/*----splide js custom css-----*/
+#thumbnail-carousel .splide__track--nav>.splide__list>.splide__slide {
+    border: 1px solid #a1ca48 !important;
+}
+#thumbnail-carousel .splide__track--nav>.splide__list>.splide__slide.is-active {
+    border: 2px solid #a1ca48 !important;
+}
+
+#main-carousel .splide__pagination__page{
+    border-radius: 6px;
+    border: 1px solid #858585;
+    display: block;
+    height: 5px;
+    background-color: white;
+    left: 6px;
+    position: relative;
+    top: 30px;
+    width: 5px;
+}
+#main-carousel .splide__pagination__page.is-active{
+    background-color: #ff5501;
+    border-color: #ff5501;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

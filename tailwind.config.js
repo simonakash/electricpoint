@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./index.html", "./heating.html","./dimplex-quantum-storage-heaters.html"],
+  content: ["./index.html", "./heating.html", "./dimplex-quantum-storage-heaters.html","./dimplex-quantum-qm150rf-quantum-storage-heater-1-5kw-wifi-enabled.html"],
   theme: {
     extend: {
       fontSize: {
@@ -17,6 +17,7 @@ module.exports = {
         'orange-550': '#ed8113',
         'zinc-500': '#6b6a6a',
         'zinc-700': '#474747',
+        'zinc-100': '#f0f0f0',
       },
       boxShadow: {
         'r-xl': '3px 0px 4px 0 rgb(0 0 0 / 30%)',
@@ -25,11 +26,24 @@ module.exports = {
         'tighter': '1.2',
       },
     },
+    minWidth: {
+      '20': '80px',
+    },
+    maxWidth: {
+      '20': '80px',
+    },
+    minHeight: {
+      '92': '370px',
+    },
+    maxHeight: {
+      '60': '240px',
+    },
   },
   variants: {
     extend: {
       grayscale: ['hover', 'focus'],
       appearance: ['hover', 'focus'],
+      inset: ['group-hover'],
     }
   },
 
